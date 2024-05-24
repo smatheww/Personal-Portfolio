@@ -14,7 +14,8 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/graybg.jpg);
+    background-image: url(images/Earth.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
