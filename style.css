@@ -27,20 +27,21 @@ body{
 .logo{
     font-size: 2.5rem;
     color: var(--text-color);
-    font-weight: 700;
-    cursor: default;
+    font-weight: 800;
+    cursor: pointer;
     text-decoration: none;
+    transition: 0.3s ease;
 }
+.logo:hover{
+    transform: scale(1.1);
+}
+
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.logo{
-    width: 140px;
 }
 
 nav ul li{
@@ -53,13 +54,14 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    position: relative;
 }
 
 nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background:#191919;
+    background:#258bff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -78,7 +80,7 @@ nav ul li a:hover::after{
     font-size: 40px;
 }
 .header-text h3 span{
-    color: #258bff
+    color: #3A7EB4;
 }
 /*----------------------about------------------*/
 #about{
@@ -333,12 +335,12 @@ nav .fas{
         background: #258bff;
         position: fixed;
         top: 0;
-        right: -200;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: 0.5s;
+        transition: right 0.5s;
 
     }
     nav ul li{
