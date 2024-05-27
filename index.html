@@ -12,7 +12,7 @@
 <div id="header">
     <div class="container">
       <nav>
-        <img src="images/logo.webp" class="logo">
+        <a href="#" class="logo">SM</a>
         <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -23,8 +23,9 @@
         <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>  
       <div class="header-text">
-        <p>Software Developer</p>
-        <h1>Hi, I am <span>Steve</span><br> Mathew from Philadelphia</h1>
+        <h1>Hi there, </h1>
+        <h3>I'm <span>Steve Mathew</span></h3>
+        <h1><span class="multiple-text"></span></h1>
       </div>
     </div>
 </div>
@@ -182,6 +183,20 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+<!-- Typed JS------------------------------------------------------------------->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+    const typed = new Typed('.multiple-text',{
+        strings: ['Software Developer', 'Tech Enthusiast','Athlete'],
+        typeSpeed: 70,
+        backSpeed: 70,
+        backDelay: 1000,
+        loop: true,
+
+    });
+</script>
 
 </body>
 </html>
